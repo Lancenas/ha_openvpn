@@ -1,0 +1,30 @@
+name: HA OpenVPN client
+version: 0.3.0
+slug: ha_openvpn
+description: HA OpenVPN client with uploaded .ovpn config
+url: https://github.com/yamestest/ha_openvpn
+arch:
+  - amd64
+  - armv7
+  - armhf
+  - aarch64
+startup: services
+boot: auto
+init: false
+host_network: true
+map:
+  - config:rw
+devices:
+  - /dev/net/tun
+privileged:
+  - NET_ADMIN
+options:
+  ovpn_file: ""
+  auto_connect: true
+  username: ""
+  password: ""
+schema:
+  ovpn_file: str
+  auto_connect: bool
+  username: str
+  password: str
