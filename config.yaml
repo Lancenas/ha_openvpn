@@ -2,7 +2,7 @@ name: HA OpenVPN client
 version: 0.3.0
 slug: ha_openvpn
 description: HA OpenVPN client with uploaded .ovpn config
-url: https://github.com/yamestest/ha_openvpn
+url: https://github.com/Lancenas/ha_openvpn
 arch:
   - amd64
   - armv7
