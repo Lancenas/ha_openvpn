@@ -10,7 +10,7 @@ USERNAME=$(jq -r '.username' "$OPTIONS")
 PASSWORD=$(jq -r '.password' "$OPTIONS")
 
 # Cesta k .ovpn súboru
-CONFIG="/homeassistant/addons_config/ha_openvpn/${OVPN_FILE}"
+CONFIG="/addons_config/ha_openvpn/${OVPN_FILE}"
 
 # Overenie názvu súboru
 if [ -z "$OVPN_FILE" ] || [ "$OVPN_FILE" == "null" ]; then
